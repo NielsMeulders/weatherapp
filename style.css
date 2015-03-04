@@ -1,0 +1,17 @@
+body
+{
+    max-width: 480px;
+    background-color: beige;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#screen
+{
+    
+}
+
+#temperature
+{
+    font-size: 5em;
+}

@@ -1,9 +1,18 @@
+@font-face
+{
+    font-family: "Weather";
+    src: url('Weather&Time.ttf');
+}
+
 body
 {
     max-width: 480px;
     background-color: beige;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'lato';
+    font-weight: 300;
+    text-align: center;
 }
 
 #screen
@@ -13,5 +22,12 @@ body
 
 #temperature
 {
-    font-size: 5em;
+    font-size: 8em;
+    text-align: center;
+}
+
+#summary
+{
+    font-family: "Weather";
+    font-size: 7em;
 }

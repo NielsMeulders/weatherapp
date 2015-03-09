@@ -26,11 +26,51 @@
 
 
                     var temp = Math.round((Math.round(result.currently.temperature)-32) * 5/9) + "°";
-                    var summ = result.currently.summary;
+                    var summ = result.currently.icon;
                     
                     switch (summ)
                     {
-                        case 'Partly Cloudy': summ = 'C'
+                        case 'clear-day': 
+                            summ = 'A';
+                            break;
+                            
+                        case 'clear-night':
+                            summ = 'I';
+                            break;
+                            
+                        case 'rain': 
+                            summ = 'R';
+                            break;
+                            
+                        case 'snow':
+                            summ = 'W';
+                            break;
+                            
+                        case 'sleet': 
+                            summ = 'X';
+                            break;
+                            
+                        case 'wind':
+                            summ = 'a';
+                            break;
+                            
+                        case 'fog': 
+                            summ = 'O';
+                            break;
+                            
+                        case 'cloudy':
+                            summ = 'C';
+                            break;
+                            
+                        case 'partly-cloudy-day': 
+                            summ = 'D';
+                            break;
+                            
+                        case 'partly-cloudy-night':
+                            summ = 'J';
+                            break;
+                        
+                        
                     }
 
                     localStorage.setItem("res", JSON.stringify(temp));

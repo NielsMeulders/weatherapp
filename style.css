@@ -7,7 +7,10 @@
 body
 {
     max-width: 480px;
-    background-color: beige;
+    background-color: #2A99B7;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
     margin-left: auto;
     margin-right: auto;
     font-family: 'lato';
@@ -15,19 +18,53 @@ body
     text-align: center;
 }
 
+.clearfix
+{
+    clear: both;
+}
+
 #screen
 {
-    
+    max-width: 480px;
 }
 
 #temperature
 {
-    font-size: 8em;
+    font-size: 4em;
     text-align: center;
+    margin-top: -30px;
+    float: left;
+}
+
+#icon
+{
+    font-family: "Weather";
+    font-size: 7em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    -webkit-animation: animatie 5s infinite;
+    animation: animatie 5s infinite;
+}
+
+@-webkit-keyframes animatie
+{
+    0%   {margin-left: 0px}
+    25%  {margin-left: -20px}
+    75%  {margin-left: 20px}
+    100% {margin-left: 0px}
 }
 
 #summary
 {
-    font-family: "Weather";
-    font-size: 7em;
+    text-align: right;
+}
+
+#second_line
+{
+    width: 300px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid white;
 }
